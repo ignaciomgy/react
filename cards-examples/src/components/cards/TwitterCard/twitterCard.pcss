@@ -1,0 +1,93 @@
+.card__container {
+    background-color: rgb(22, 24, 28);
+    padding: 30px 0;
+    border-radius: 30px;
+}
+
+.card__container__title {
+    color: rgb(231, 233, 234);
+    padding: 0 20px 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-radius: 20px;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background-color: rgb(39 42 50);
+    border-radius: 0;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+
+.card__header {
+        display: flex;
+}
+
+.card__header__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    color: white;
+}
+
+.card__header__info__name {
+    color: white;
+    text-decoration: none;
+}
+
+.card__header__info__name:hover {
+    text-decoration: underline;
+}
+
+.card__header__image {
+    border-radius: 40px;
+    height: 48px;
+    width: 48px;
+}
+
+.card__button {
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 0 16px;
+    font-weight: bold;
+    line-height: 32px;
+    cursor: pointer;
+    min-width: 90px;
+    transition: 300ms;
+}
+
+.card__button__followText {
+    display: block;
+}
+
+.card__button__following {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.card__button.following:hover {
+    border: 1px solid red;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.card__button__unfollow {
+    display: none;
+}
+
+.card__button.following:hover > .card__button__unfollow {
+    display: block;
+}
+
+.card__button.following:hover > .card__button__followText {
+    display: none;
+}
